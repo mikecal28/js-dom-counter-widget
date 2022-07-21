@@ -1,0 +1,115 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-smooth: subpixel-antialiased;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+html body .widget-container {
+  width: 300px;
+  height: 500px;
+  display: grid;
+  grid-template-areas: "a" "b" "c";
+  grid-template-rows: 20% 1fr 25%;
+}
+html body .widget-container .header-wrapper {
+  grid-area: a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cyan;
+  border-radius: 30px 30px 0 0;
+  color: darkcyan;
+  box-shadow: 0px 0px 5px black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html body .widget-container .display-wrapper {
+  grid-area: b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  background: linear-gradient(to top left, cyan 10%, rgb(77, 136, 212) 100%, skyblue 100%);
+  font-size: 160px;
+  box-shadow: inset 0px 2px 5px gray;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html body .widget-container .display-wrapper .positive-digit {
+  display: none;
+  color: green;
+}
+html body .widget-container .display-wrapper .zero-digit {
+  display: none;
+  color: black;
+}
+html body .widget-container .display-wrapper .negative-digit {
+  display: none;
+  color: red;
+}
+html body .widget-container .buttons-wrapper {
+  grid-area: c;
+  display: flex;
+  border-radius: 0 0 30px 30px;
+  background-color: darkgray;
+}
+html body .widget-container .buttons-wrapper button {
+  flex: 1;
+  border: none;
+  font-size: 50px;
+  color: darkcyan;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #c1c1c1;
+}
+html body .widget-container .buttons-wrapper button:active {
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  padding-top: 2px;
+}
+html body .widget-container .buttons-wrapper button h2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html body .widget-container .buttons-wrapper #decrease {
+  border-bottom-left-radius: 30px;
+  border-right: 1px solid lightgray;
+}
+html body .widget-container .buttons-wrapper #decrease > * {
+  padding-bottom: 10px;
+}
+html body .widget-container .buttons-wrapper #reset {
+  padding: 20px;
+  font-size: 18px;
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body .widget-container .buttons-wrapper #reset:active {
+  padding-top: 22px;
+}
+html body .widget-container .buttons-wrapper #increase {
+  border-bottom-right-radius: 30px;
+  border-left: 1px solid lightgray;
+}
+html body .widget-container .buttons-wrapper #increase > * {
+  padding-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */
